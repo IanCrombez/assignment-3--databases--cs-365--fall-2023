@@ -184,7 +184,8 @@ function insert($site_name, $site_url, $username, $password, $email, $comment)
 
 
 
-function delete($siteName, $username) {
+function delete($siteName, $username) 
+{
     try 
     {
         //same as the rest
@@ -204,7 +205,7 @@ function delete($siteName, $username) {
     } 
     catch (PDOException $e) 
     {
-        echo '<p>The delete function dint work. </p>' . "\n";
+        echo '<p>The delete function didnt work. </p>' . "\n";
         exit;
     }
 }
