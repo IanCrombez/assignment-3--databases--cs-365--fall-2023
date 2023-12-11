@@ -10,7 +10,7 @@ SET @Key = UNHEX('213584861aeeee35851');
 
 CREATE TABLE IF NOT EXISTS sites(
     site_id INT AUTO_INCREMENT,
-    site_name VARCHAR(265) NOT NULL,
+    site_name VARCHAR(256) NOT NULL,
     site_url VARCHAR(256) NOT NULL,
     PRIMARY KEY (site_id)
 );
