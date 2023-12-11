@@ -1,0 +1,160 @@
+:root 
+{
+    --default-color: #bf3f3f;
+    --background-color: #191919;
+    --border-color: #ff0000;
+    --button-color: #f00;
+    --legend-color: rgb(100, 98, 199);
+    --notifucation-color: #ffc0cb;
+    --dropdown-color: rgb(177, 171, 171);
+    --table-color: #333;
+    --color-six: #4c4c4c;
+    --row-color-odd: #262626;
+    --row-color-even: #1e1e1e;
+  }
+  
+  body 
+  {
+    background-color: var(--background-color);
+    color: var(--default-color);
+    margin-bottom: 100px;
+  }
+  
+  body,
+  input 
+  {
+    font-family: monospace;
+  }
+  
+  legend,
+  th 
+  {
+    text-transform: uppercase;
+    color: var(--legend-color);
+    padding: 0 20px;
+  }
+  
+  table,
+  td,
+  th 
+  {
+    border: 1px solid var(--border-color);
+  }
+  
+  table 
+  {
+    margin: 50px auto;
+    border-collapse: collapse;
+  }
+  
+  table td,
+  table th 
+  {
+    padding: 10px;
+  }
+  
+  table thead tr th:nth-child(5) 
+  {
+    white-space: nowrap;
+  }
+  
+  table tbody td:nth-child(5) 
+  {
+    padding: 24px;
+    cursor: pointer;
+  }
+  
+  table tbody tr:nth-child(odd) 
+  {
+    background-color: var(--row-color-odd);
+  }
+  
+  table tbody tr:nth-child(even) 
+  {
+    background-color: var(--row-color-even);
+  }
+  
+  table tbody tr:hover 
+  {
+    background-color: var(--table-color);
+  }
+  
+  form 
+  {
+    padding: 10px 0;
+  }
+  
+  form fieldset 
+  {
+    padding: 10px 20px 20px;
+  }
+  
+  form fieldset p 
+  {
+    margin-top: 15px;
+  }
+  
+  form select 
+  {
+    border: 0;
+    padding: 5px;
+    background-color: var(--dropdown-color);
+    font-size: .9em;
+    vertical-align: middle;
+  }
+  
+  form input 
+  {
+    border: 1px solid var(--color-six);
+    padding: 5px;
+    background-color: var(--background-color);
+    color: var(--default-color);
+    vertical-align: top;
+  }
+  
+  form input:focus 
+  {
+    box-shadow: 0 0 10px var(--default-color);
+  }
+  
+  form input[type="submit"] 
+  {
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    background-color: var(--color-six);
+    color: var(--default-color);
+    font-size: .8em;
+  }
+  
+  h1 
+  {
+    text-align: center;
+  }
+  
+  p
+  {
+    margin: 10px 0 0;
+  }
+  
+  #clear-results 
+  {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    margin-left: 8px;
+    text-align: left;
+  }
+  
+  #clear-results input 
+  {
+    background-color: var(--button-color);
+  }
+  
+  #error 
+  {
+    margin: 25px 0;
+    padding: 25px 0;
+    background-color: var(--notifucation-color);
+    color: var(--button-color);
+    text-align: center;
+  }
